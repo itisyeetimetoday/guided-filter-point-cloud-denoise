@@ -16,7 +16,7 @@ def main():
     # guided_filter(pcd, 0.01, 0.01)
 
     #o3d.visualization.draw_geometries([pcd])
-@vectorize([float64(float64, float64, float64, float64, float64, float64)])
+@vectorize([float64(float64, float64, float64, float64, float64, float64)], target='cuda')
 def np_filter(k, idx, epsilon, points, points_copy, i):
     neighbors = points[idx, :]
     mean = np.mean(neighbors)
