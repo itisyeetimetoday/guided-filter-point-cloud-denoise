@@ -1,6 +1,6 @@
 # Point Cloud Denoise
 
-Use guided filter to reduce the noise of point clouds.
+Use guided filter to reduce the noise of point clouds. This forks attempts to use numba to speed up the process.
 
 ## Guided Filter for 3D Points
 ![](./img/guided_filter_3d.png)
